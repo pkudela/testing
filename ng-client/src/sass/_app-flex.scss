@@ -1,0 +1,33 @@
+/*** FLEX ***/
+
+app-flex {
+  .container {
+    //height: 500px;
+    background-color: silver;
+    
+    .app-flex-wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      height: 500px;
+      //flex-flow: row nowrap;
+      //justify-content: space-between;
+      align-items: stretch;
+      align-content: stretch;
+
+      div {
+        align-self: flex-start;
+        
+        &:nth-child(2) {
+          flex-basis: 300px;
+          align-self: stretch;
+        }
+        /*span {
+          display: block;
+          padding: 50px; 
+        }*/
+        //width: 100%;
+      }
+    }
+  }
+}
