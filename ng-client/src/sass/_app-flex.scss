@@ -1,32 +1,36 @@
-/*** FLEX ***/
+// --- FLEX ---
 
 app-flex {
+  @extend .app-full-height;
+  
   .container {
-    //height: 500px;
+    @extend .app-full-height;
     background-color: silver;
     
     .app-flex-wrapper {
       display: flex;
+      overflow-y: auto;
+      //height: 100%;
       flex-direction: row;
       flex-wrap: nowrap;
-      height: 500px;
       //flex-flow: row nowrap;
       //justify-content: space-between;
-      align-items: stretch;
-      align-content: stretch;
+      //align-items: stretch;
+      //align-content: stretch;
 
       div {
-        align-self: flex-start;
+        flex: auto;
+        align-self: stretch;
+        //height: 100%;
         
         &:nth-child(2) {
-          flex-basis: 300px;
-          align-self: stretch;
+          flex-basis: 200px;
+          //align-self: stretch;
         }
-        /*span {
+        span {
           display: block;
-          padding: 50px; 
-        }*/
-        //width: 100%;
+          padding: 50px 0; 
+        }
       }
     }
   }

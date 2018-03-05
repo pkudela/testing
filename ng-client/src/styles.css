@@ -19433,15 +19433,87 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   src: url("Roboto-~/assets/fonts/Roboto-Condensed/Roboto-Condensed-BoldItalic.eot");
   src: local("Roboto Condensed BoldItalic"), local("Roboto-Condensed BoldItalic"), local("Roboto-Condensed-BoldItalic"), url("~/assets/fonts/Roboto-Condensed/Roboto-Condensed-BoldItalic.eot?#iefix") format("embedded-opentype"), url("~/assets/fonts/Roboto-Condensed/Roboto-Condensed-BoldItalic.woff2") format("woff2"), url("~/assets/fonts/Roboto-Condensed/Roboto-Condensed-BoldItalic.woff") format("woff"), url("~/assets/fonts/Roboto-Condensed/Roboto-Condensed-BoldItalic.ttf") format("truetype"), url("~/assets/fonts/Roboto-Condensed/Roboto-Condensed-BoldItalic.svg#Condensed") format("svg"); }
 
-/* line 4, /Users/petr.kudela/Projects/testing/github/ng-client/src/sass/_app-navbar.scss */
-app-navbar nav {
-  margin-bottom: 20px; }
+/* line 3, /Users/petr.kudela/Projects/testing/github/ng-client/src/sass/_app-global.scss */
+.app-full-height, app-flex, app-flex .container {
+  height: 100%; }
 
-/*** FLEX ***/
-/* line 3, /Users/petr.kudela/Projects/testing/github/ng-client/src/sass/_app-flex.scss */
-app-flex {
-  display: block;
+/* line 3, /Users/petr.kudela/Projects/testing/github/ng-client/src/sass/_app-layout.scss */
+html,
+body,
+app-root {
+  width: 100%;
   height: 100%;
-  background-color: red; }
+  display: block; }
+
+/* line 12, /Users/petr.kudela/Projects/testing/github/ng-client/src/sass/_app-layout.scss */
+app-root main {
+  width: 100%;
+  height: calc(100% - 64px);
+  padding: 40px 0; }
+
+/* line 6, /Users/petr.kudela/Projects/testing/github/ng-client/src/sass/_app-flex.scss */
+app-flex .container {
+  background-color: silver; }
+  /* line 10, /Users/petr.kudela/Projects/testing/github/ng-client/src/sass/_app-flex.scss */
+  app-flex .container .app-flex-wrapper {
+    display: flex;
+    overflow-y: auto;
+    flex-direction: row;
+    flex-wrap: nowrap; }
+    /* line 21, /Users/petr.kudela/Projects/testing/github/ng-client/src/sass/_app-flex.scss */
+    app-flex .container .app-flex-wrapper div {
+      flex: auto;
+      align-self: stretch; }
+      /* line 26, /Users/petr.kudela/Projects/testing/github/ng-client/src/sass/_app-flex.scss */
+      app-flex .container .app-flex-wrapper div:nth-child(2) {
+        flex-basis: 200px; }
+      /* line 30, /Users/petr.kudela/Projects/testing/github/ng-client/src/sass/_app-flex.scss */
+      app-flex .container .app-flex-wrapper div span {
+        display: block;
+        padding: 50px 0; }
+
+/* line 6, /Users/petr.kudela/Projects/testing/github/ng-client/src/sass/_app-table.scss */
+app-table .app-table-head-fixed {
+  margin-top: 50px; }
+  /* line 10, /Users/petr.kudela/Projects/testing/github/ng-client/src/sass/_app-table.scss */
+  app-table .app-table-head-fixed table th, app-table .app-table-head-fixed table td {
+    vertical-align: top;
+    width: 16.6666%; }
+    /* line 14, /Users/petr.kudela/Projects/testing/github/ng-client/src/sass/_app-table.scss */
+    app-table .app-table-head-fixed table th a, app-table .app-table-head-fixed table td a {
+      display: inline-block;
+      white-space: pre-wrap;
+      word-break: break-all;
+      word-wrap: break-word; }
+    /* line 23, /Users/petr.kudela/Projects/testing/github/ng-client/src/sass/_app-table.scss */
+    app-table .app-table-head-fixed table th:not(:first-child), app-table .app-table-head-fixed table td:not(:first-child) {
+      border-left: 1px solid #bdbdbd; }
+  /* line 30, /Users/petr.kudela/Projects/testing/github/ng-client/src/sass/_app-table.scss */
+  app-table .app-table-head-fixed .app-head-wrapper {
+    position: relative;
+    box-shadow: 0 7px 20px -16px rgba(0, 0, 0, 0.5); }
+    /* line 35, /Users/petr.kudela/Projects/testing/github/ng-client/src/sass/_app-table.scss */
+    app-table .app-table-head-fixed .app-head-wrapper .app-head-sroll-hide {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 18px;
+      height: 100%;
+      background-color: #e8eaf6;
+      border-bottom: 1px solid #bdbdbd; }
+    /* line 46, /Users/petr.kudela/Projects/testing/github/ng-client/src/sass/_app-table.scss */
+    app-table .app-table-head-fixed .app-head-wrapper .app-head-sroll-wrapper {
+      overflow-y: scroll; }
+      /* line 49, /Users/petr.kudela/Projects/testing/github/ng-client/src/sass/_app-table.scss */
+      app-table .app-table-head-fixed .app-head-wrapper .app-head-sroll-wrapper thead {
+        border-width: 0 0 1px 0;
+        border-style: solid;
+        border-color: #bdbdbd;
+        background-color: #e8eaf6; }
+  /* line 57, /Users/petr.kudela/Projects/testing/github/ng-client/src/sass/_app-table.scss */
+  app-table .app-table-head-fixed .app-body-wrapper {
+    max-height: 600px;
+    overflow-y: scroll;
+    overflow-x: auto; }
 
 /*# sourceMappingURL=styles.css.map */
