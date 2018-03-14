@@ -1,10 +1,21 @@
 <h2>My heroes<!--{{heroes | json}}--></h2>
 
+<div>
+  <label>Hero name:
+    <input #heroName />
+  </label>
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button mz-button (click)="add(heroName.value); heroName.value=''">
+    add hero
+  </button>
+</div><br />
+
 <ul>
   <li *ngFor="let hero of heroes" >
     <a routerLink="/detail/{{hero.id}}">
       <span>{{hero.id}}</span> | {{hero.name}}
     </a>
+    <i mz-icon-mdi [icon]="'close-circle'" (click)="delete(hero)" mz-tooltip [tooltip]="'Delete hero'" class="right"></i>
   </li>
 </ul>
 

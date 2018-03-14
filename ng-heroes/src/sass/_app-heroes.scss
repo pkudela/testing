@@ -14,19 +14,24 @@ app-root {
     ul {
       li {
         margin-bottom: 5px;
-        width: 10rem;
+        width: 15rem;
         cursor: pointer;
         border-radius: 2px;
         @extend .blue;
+        padding-right: 10px;
 
         a {
           @extend .white-text;
-          display: block;
+          display: inline-block;
           padding: 5px 10px;
 
           &:hover {
             @extend .blue.darken-3;
           }
+        }
+        
+        .mdi-close-circle {
+          color: color('blue', 'lighten-4');
         }
       }
     }
