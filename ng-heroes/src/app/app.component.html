@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>
+    <a routerLink="/">{{title}}!</a>
+  </h1>
+  <hr /><br />
+  <div class="app-nav">
+    <a mz-button routerLink="/dashboard" [class.active]="setActivePage('/dashboard') || setActivePage('/')">
+      dashboard
+    </a>
+    <a mz-button routerLink="/heroes" [class.active]="setActivePage('/heroes')">
+      Heroes
+    </a>
+  </div>
+  <router-outlet></router-outlet>
+  <app-messages></app-messages>
+</div>
+

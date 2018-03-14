@@ -1,0 +1,48 @@
+// --- HEROES ---
+
+app-root {
+  .app-nav {
+    a {
+      @extend .grey.lighten-3, .grey-text;
+      &.active {
+        @extend .grey.darken-3, .white-text;
+      }
+    }
+  }
+  
+  app-heroes {
+    ul {
+      li {
+        margin-bottom: 5px;
+        width: 10rem;
+        cursor: pointer;
+        border-radius: 2px;
+        @extend .blue;
+
+        a {
+          @extend .white-text;
+          display: block;
+          padding: 5px 10px;
+
+          &:hover {
+            @extend .blue.darken-3;
+          }
+        }
+      }
+    }
+  }
+
+  app-hero-detail {
+    .app-detail-wrapper {
+      margin-top: 20px;
+
+      div {
+        &:last-child {
+          padding: 10px 20px;
+
+          @extend .blue-grey, .lighten-5;
+        }
+      }
+    }
+  } 
+}

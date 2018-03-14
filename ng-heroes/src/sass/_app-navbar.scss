@@ -1,0 +1,16 @@
+// --- NAVBAR ---
+
+app-navbar {
+  nav {
+    @extend .black;
+    @extend .z-depth-0;
+    
+    ul {
+      li {
+        &.active {
+          @extend .grey.darken-3;
+        }
+      }
+    }
+  }
+}

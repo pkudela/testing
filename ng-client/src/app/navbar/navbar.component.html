@@ -1,6 +1,9 @@
 <mz-navbar>
   <!--<a href="#" class="brand-logo">Logo</a>-->
   <mz-navbar-item-container [align]="'right'">
+    <mz-navbar-item routerLink="search" routerLinkActive="active" #search="routerLinkActive" [active]="search.isActive">
+      <a  routerLink="search">Search</a>
+    </mz-navbar-item>
     <mz-navbar-item routerLink="flex" routerLinkActive="active" #flex="routerLinkActive" [active]="flex.isActive">
       <a  routerLink="flex">Flex</a>
     </mz-navbar-item>
