@@ -21,8 +21,4 @@ export class TableComponent implements OnInit {
     this.view = !this.view;
     this.text += this.text;
   }
-  
-  greeter(person) {
-      return "Hello, " + person;
-  }
 }

@@ -13,6 +13,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { TableComponent } from './table/table.component';
 import { SearchComponent } from './search/search.component';
 import { EditComponent } from './edit/edit.component';
+import { TypescriptComponent } from './typescript/typescript.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { EditComponent } from './edit/edit.component';
     NavbarComponent,
     TableComponent,
     SearchComponent,
-    EditComponent
+    EditComponent,
+    TypescriptComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +35,7 @@ import { EditComponent } from './edit/edit.component';
       { path: 'flex', component: FlexComponent },
       { path: 'table', component: TableComponent },
       { path: 'search', component: SearchComponent },
+      { path: 'typescript', component: TypescriptComponent },
       { path: 'edit/:id', component: EditComponent },
       { path: '', redirectTo: '/search', pathMatch: 'full' }
     ])
